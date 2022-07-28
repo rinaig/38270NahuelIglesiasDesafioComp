@@ -22,8 +22,8 @@ while(oportunidades <=4){
                     if(numSystem == numPlayer) {
                         alert("GANASTE FELICITACIONES!!!!!! \n \nAdivinaste el numero secrerto es el " + numSystem + "\n \nTe invitamos a jugar nuevamente cuando lo desees")                    
                     break} 
-                            // Con estos IF define cuan cerca esta del numero con 4 variables diferentes. Y le da un mensaje y las oportunidades restantes.
-                    if(numSystem - numPlayer >= -3 && numSystem - numPlayer <= 3) {
+                            //Con estos Else if define cuan cerca esta del numero con 4 variables diferentes. Y le da un mensaje y las oportunidades restantes.
+                            else if(numSystem - numPlayer >= -3 && numSystem - numPlayer <= 3) {
                                 alert("SIGUE ASI! Estas Muy muy cerca! \n \nEstas a menos de 3 numeros de distancia \n \nTe quedan " + (4 - oportunidades) + " oportunidades")  }
                             else if(numSystem - numPlayer >= -6 && numSystem - numPlayer <= -4) {
                                  alert("Un Esfuerzo mas y estaras muy cerca! \n \nEstas a menos de 6 numeros de distancia \n \nTe quedan " + (4 - oportunidades) + " oportunidades")}
@@ -33,7 +33,7 @@ while(oportunidades <=4){
                                 alert("Debes esforzarte y acercarte mas! \n \nEstas a mas de 7 numeros de distancia \n \nTe quedan " + (4 - oportunidades) + " oportunidades")}   
 oportunidades++         }
 
-// Cuando i sea mayor a 4 se dara por concluido el juego
+// Cuando oportunidades sea mayor a 4 se dara por concluido el juego
 if(oportunidades>4){ 
     alert("¡¡¡GAME OVER!!! \n \nSe han agotado las oportunidades \n \n El numero secreto era el "+ numSystem +" \n \n Sin embargo te esperamos a jugar nuevamente cuando quieras!")}     
     
